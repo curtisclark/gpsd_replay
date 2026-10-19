@@ -1,0 +1,15 @@
+services:
+  gpsd-replay:
+    build: .
+    ports:
+      - "2947:2947"   # gpsd TCP
+      - "8765:8765"   # Web UI
+    volumes:
+      - ./examples:/data:ro
+    command:
+      - nmea
+      - /data/national_mall_dc_drive.nmea
+      - --loop
+      - --web-ui
+      - --file-dir
+      - /data

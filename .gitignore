@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# GPS data — avoid committing personal recordings anywhere except the examples dir
+*.nmea
+*.gpx
+!examples/*.nmea
+!examples/*.gpx

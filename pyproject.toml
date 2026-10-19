@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpsd-replay"
+version = "0.1.0"
+description = "Replay NMEA logs and GPX routes as live GPS streams (gpsd JSON + PTY)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["gpsd", "gps", "nmea", "gnss", "replay", "simulation"]
+
+# Zero runtime dependencies — all stdlib
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+
+[project.scripts]
+gpsd-replay = "gpsd_replay.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gpsd_replay*"]
