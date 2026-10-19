@@ -12,6 +12,8 @@ Replay recorded NMEA logs or synthetic GPX routes as live GPS streams, with a br
 - **Zero runtime dependencies**: pure Python stdlib (3.10+)
 - **Docker support**: single-container deployment
 
+<img width="1702" height="806" alt="image" src="https://github.com/user-attachments/assets/9660a185-51a9-4e4b-81c9-5456d4c8c1c4" />
+
 ## Installation
 
 ### Local
